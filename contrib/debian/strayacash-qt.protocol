@@ -1,0 +1,11 @@
+[Protocol]
+exec=strayacash-qt '%u'
+protocol=strayacash
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false

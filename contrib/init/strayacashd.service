@@ -1,0 +1,26 @@
+[Unit]
+Description=strayacash's distributed currency daemon
+After=network.target
+
+[Service]
+User=strayacash
+Group=strayacash
+
+Type=forking
+PIDFile=/var/lib/strayacashd/strayacashd.pid
+
+ExecStart=/usr/bin/strayacashd -daemon -pid=/var/lib/strayacashd/strayacashd.pid \
+          -conf=/etc/strayacash/strayacash.conf -datadir=/var/lib/strayacashd
+
+ExecStop=-/usr/bin/strayacash-cli -conf=/etc/strayacash/strayacash.conf \
+         -datadir=/var/lib/strayacashd stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

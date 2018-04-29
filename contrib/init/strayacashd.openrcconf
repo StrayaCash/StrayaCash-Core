@@ -1,0 +1,26 @@
+# /etc/conf.d/strayacashd: config file for /etc/init.d/strayacashd
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/strayacash/strayacash.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/strayacashd"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/strayacashd.pid"
+
+# Where to write strayacashd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/strayacashd"
+
+# User and group to own strayacashd process
+#BITCOIND_USER="strayacash"
+#BITCOIND_GROUP="strayacash"
+
+# Path to strayacashd executable
+#BITCOIND_BIN="/usr/bin/strayacashd"
+
+# Nice value to run strayacashd under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

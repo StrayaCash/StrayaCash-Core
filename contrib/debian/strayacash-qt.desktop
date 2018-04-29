@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=strayacash
+Comment=strayacash P2P Cryptocurrency
+Comment[fr]=strayacash, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=strayacash, eşten eşe kriptografik sanal para birimi
+Exec=strayacash-qt %u
+Terminal=false
+Type=Application
+Icon=strayacash128
+MimeType=x-scheme-handler/strayacash;
+Categories=Office;Finance;
