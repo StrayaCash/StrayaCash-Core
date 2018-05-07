@@ -6,11 +6,11 @@ CONFIGFOLDER='/root/.strayacash'
 COIN_DAEMON='strayacashd'
 COIN_CLI='strayacash-cli'
 COIN_PATH='/usr/local/bin/'
-COIN_REPO='https://github.com/strayacashCash/strayacash.git'
+COIN_REPO='https://github.com/strayacash/strayacash-core.git'
 COIN_TGZ=''
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
 COIN_NAME='strayacash'
-COIN_PORT=11122
+COIN_PORT=11770
 RPC_PORT=12458
 
 NODEIP=$(curl -s4 icanhazip.com)
