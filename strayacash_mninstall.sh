@@ -11,8 +11,6 @@ COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
 COIN_NAME='strayacash'
 COIN_PORT=11770 #Updated Port
 RPC_PORT=12458
-RPCUSER=strayacashrpc
-RPCPASSWORD=Cook1770
 
 NODEIP=$(curl -s4 icanhazip.com)
 
