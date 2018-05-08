@@ -96,22 +96,22 @@ public:
         pchMessageStart[2] = 0xa3;
         pchMessageStart[3] = 0xe2;
         vAlertPubKey = ParseHex("04266db20be5c53b93678e2e41c9def7af38197280c65e813f682adf2ed501ac186022562dbdf2ce3204d07432660fb61ecad8e78b6b8d39c568fb892db8ecb736");
-        nDefaultPort = 11122;
+        nDefaultPort = 11770; // Year Captain Cook Landed in Australia
         bnProofOfWorkLimit = ~uint256(0) >> 20; // FIX starting difficulty is 1 / 2^12
-        nSubsidyHalvingInterval = 210000;
+        nSubsidyHalvingInterval = 125000; // Decreased From 210,000
         nMaxReorganizationDepth = 100;
         nEnforceBlockUpgradeMajority = 750;
         nRejectBlockOutdatedMajority = 950;
-        nToCheckBlockUpgradeMajority = 1000;
+        nToCheckBlockUpgradeMajority = 250000; // Increased from 1000
         nMinerThreads = 0;
         nTargetTimespan = 2 * 60; // FIX: 120 seconds
         nTargetSpacing = 2 * 60;  // FIX: 120 seconds
         nLastPOWBlock = 1000;
-        nMaturity = 151; // FIX
+        nMaturity = 101; // FIX //Decreased from 151
         nMasternodeCountDrift = 20;
 	nMasternodeColleteralLimxDev = 5000; //Params().MasternodeColleteralLimxDev()
         nModifierUpdateBlock = 510;
-        nMaxMoneyOut = 90000000 * COIN;
+        nMaxMoneyOut = 24809843 * COIN; // Decreased From 90,000,000
 
         const char* pszTimestamp = "You may want to get a job in a bank";
         CMutableTransaction txNew;
@@ -133,8 +133,8 @@ public:
         assert(hashGenesisBlock == uint256("0x000000abe469592d7fce3219497661f3d18deff0cf7b1fc9846f199a25e2135c"));
         assert(genesis.hashMerkleRoot == uint256("0x30e73eb7875328cecc42b07eeb3e86a2d4644e0a65ed3db2b3f87b3368767358"));
 
-        vSeeds.push_back(CDNSSeedData("seeddns.strayacash.cash", "seeddns.strayacash.cash"));
-        vSeeds.push_back(CDNSSeedData("seeddns2.strayacash.cash", "seeddns2.strayacash.cash"));
+        vSeeds.push_back(CDNSSeedData("seeddns.strayacash.org", "seeddns.strayacash.org")); // Updated!
+        vSeeds.push_back(CDNSSeedData("seeddns2.strayacash.org", "seeddns2.strayacash.org")); // Updated!
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 33);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 91);
@@ -184,18 +184,18 @@ public:
         pchMessageStart[2] = 0xa8;
         pchMessageStart[3] = 0xc5;
         vAlertPubKey = ParseHex("0485286086a0871308bf36519edb18d95bbe9b098abe14ec9b684b5255028ec644bacdbddb98a522a6bcd7ab8e7d3582d7a5b9bf59c427f7eabce447b5ba6de25f");
-        nDefaultPort = 12222;
+        nDefaultPort = 11788; // Year First Fleet Arrived
         nEnforceBlockUpgradeMajority = 51;
         nRejectBlockOutdatedMajority = 75;
         nToCheckBlockUpgradeMajority = 100;
         nMinerThreads = 0;
         nTargetTimespan = 2 * 60; // FIX: 1 minute
         nTargetSpacing = 2 * 60;  // FIX: 1 minute
-        nLastPOWBlock = 200;
+        nLastPOWBlock = 125000; // Inceased from 200
         nMaturity = 15;
         nMasternodeCountDrift = 4;
         nModifierUpdateBlock = 51197; //approx Mon, 17 Apr 2017 04:00:00 GMT
-        nMaxMoneyOut = 43199500 * COIN;
+        nMaxMoneyOut = 90000000 * COIN; // Increased from 43,199,500
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
         genesis.nTime = 1522675262;
