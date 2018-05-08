@@ -6,6 +6,7 @@ CONFIGFOLDER='/root/.strayacash'
 COIN_DAEMON='strayacashd'
 COIN_CLI='strayacash-cli'
 COIN_PATH='/usr/local/bin/'
+COIN_REPO='https://github.com/strayacash/strayacash-core.git'
 COIN_TGZ=''
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
 COIN_NAME='strayacash'
