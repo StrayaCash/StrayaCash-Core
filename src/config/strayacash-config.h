@@ -268,7 +268,7 @@
 #define LT_OBJDIR ".libs/"
 
 /* Define to the address where bug reports for this package should be sent. */
-#define PACKAGE_BUGREPORT "www.strayacash.co"
+#define PACKAGE_BUGREPORT "www.strayacash.org" //Updated URL
 
 /* Define to the full name of this package. */
 #define PACKAGE_NAME "strayacash Core"
