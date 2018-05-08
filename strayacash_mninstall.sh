@@ -6,12 +6,18 @@ CONFIGFOLDER='/root/.strayacash'
 COIN_DAEMON='strayacashd'
 COIN_CLI='strayacash-cli'
 COIN_PATH='/usr/local/bin/'
+<<<<<<< HEAD
+COIN_REPO='https://github.com/diabloblack/strayacash.git'
+=======
 COIN_REPO='https://github.com/strayacash/strayacash-core.git'
+>>>>>>> 2b0e27e47689f89faddda3c3aacdbd3fb7f6f938
 COIN_TGZ=''
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
 COIN_NAME='strayacash'
-COIN_PORT=11770
+COIN_PORT=11770 #Updated Port
 RPC_PORT=12458
+RPCUSER=strayacashrpc
+RPCPASSWORD=Cook1770
 
 NODEIP=$(curl -s4 icanhazip.com)
 
