@@ -107,7 +107,7 @@ public:
         nTargetTimespan = 2 * 60; // FIX: 120 seconds
         nTargetSpacing = 2 * 60;  // FIX: 120 seconds
         nLastPOWBlock = 250000; // Increased from 1000
-        nMaturity = 101; // FIX //Decreased from 151
+        nMaturity = 100; // FIX //Decreased from 151
         nMasternodeCountDrift = 20;
 	nMasternodeColleteralLimxDev = 5000; //Params().MasternodeColleteralLimxDev()
         nModifierUpdateBlock = 510;
@@ -258,7 +258,7 @@ public:
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 1;
         nTargetTimespan = 24 * 60 * 60; // strayacash: 1 day
-        nTargetSpacing = 1 * 60;        // strayacash: 1 minutes
+        nTargetSpacing = 1 * 150;        // strayacash: 2.5 minutes (Increased from 1)
         bnProofOfWorkLimit = ~uint256(0) >> 1;
         genesis.nTime = 1522675263;
         genesis.nBits = 0x207fffff;
