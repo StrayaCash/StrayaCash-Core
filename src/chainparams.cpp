@@ -113,7 +113,7 @@ public:
         nModifierUpdateBlock = 510;
         nMaxMoneyOut = 24809843 * COIN; // Decreased From 90,000,000
 
-        const char* pszTimestamp = "Google to face Financial Ruin!";
+        const char* pszTimestamp = "Google to shut down operations";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
