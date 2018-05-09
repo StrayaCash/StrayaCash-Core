@@ -134,8 +134,8 @@ public:
         assert(genesis.hashMerkleRoot == uint256("0x085a5cc6a4346f5d30adc7881e2bd26ceddd873bc0708f4892cbdbb933697fad"));
 	//assert(genesis.hashMerkleRoot == uint256("0x30e73eb7875328cecc42b07eeb3e86a2d4644e0a65ed3db2b3f87b3368767358"));
 
-        vSeeds.push_back(CDNSSeedData("seeddns.strayacash.org", "seeddns.strayacash.org")); // Updated!
-        vSeeds.push_back(CDNSSeedData("seeddns2.strayacash.org", "seeddns2.strayacash.org")); // Updated!
+        vSeeds.push_back(CDNSSeedData("seeddns.straya.cash", "seeddns.straya.cash")); // Updated!
+        vSeeds.push_back(CDNSSeedData("seeddns2.stray.cash", "seeddns2.straya.cash")); // Updated!
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 63);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 91);
