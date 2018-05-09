@@ -102,11 +102,11 @@ public:
         nMaxReorganizationDepth = 100;
         nEnforceBlockUpgradeMajority = 750;
         nRejectBlockOutdatedMajority = 950;
-        nToCheckBlockUpgradeMajority = 250000; // Increased from 1000
+        nToCheckBlockUpgradeMajority = 1000; 
         nMinerThreads = 0;
         nTargetTimespan = 2 * 60; // FIX: 120 seconds
         nTargetSpacing = 2 * 60;  // FIX: 120 seconds
-        nLastPOWBlock = 1000;
+        nLastPOWBlock = 250000; // Increased from 1000
         nMaturity = 101; // FIX //Decreased from 151
         nMasternodeCountDrift = 20;
 	nMasternodeColleteralLimxDev = 5000; //Params().MasternodeColleteralLimxDev()
