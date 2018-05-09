@@ -96,7 +96,7 @@ public:
         pchMessageStart[2] = 0xa3;
         pchMessageStart[3] = 0xe2;
         vAlertPubKey = ParseHex("04266db20be5c53b93678e2e41c9def7af38197280c65e813f682adf2ed501ac186022562dbdf2ce3204d07432660fb61ecad8e78b6b8d39c568fb892db8ecb736");
-        nDefaultPort = 11770; // Year Captain Cook Landed in Australia
+        nDefaultPort = 11788; // Main Net Port Arrival of the First Fleet
         bnProofOfWorkLimit = ~uint256(0) >> 20; // FIX starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 125000; // Decreased From 210,000
         nMaxReorganizationDepth = 100;
@@ -184,7 +184,7 @@ public:
         pchMessageStart[2] = 0xa8;
         pchMessageStart[3] = 0xc5;
         vAlertPubKey = ParseHex("0485286086a0871308bf36519edb18d95bbe9b098abe14ec9b684b5255028ec644bacdbddb98a522a6bcd7ab8e7d3582d7a5b9bf59c427f7eabce447b5ba6de25f");
-        nDefaultPort = 11788; // Year First Fleet Arrived
+        nDefaultPort = 11770; // Tetnet Port, Year of Captain Cooks Arrival to Australia
         nEnforceBlockUpgradeMajority = 51;
         nRejectBlockOutdatedMajority = 75;
         nToCheckBlockUpgradeMajority = 100;
