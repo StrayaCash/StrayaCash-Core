@@ -113,7 +113,7 @@ public:
         nModifierUpdateBlock = 510;
         nMaxMoneyOut = 24809843 * COIN; // Decreased From 90,000,000
 
-        const char* pszTimestamp = "You may want to get a job in a bank";
+        const char* pszTimestamp = "Google to face Financial Ruin!";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -124,9 +124,9 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1522675261;
+        genesis.nTime = 1525845356;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 18675;
+        genesis.nNonce = 11788;
 
         hashGenesisBlock = genesis.GetHash();
 
