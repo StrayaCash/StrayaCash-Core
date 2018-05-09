@@ -136,7 +136,7 @@ public:
         vSeeds.push_back(CDNSSeedData("seeddns.strayacash.org", "seeddns.strayacash.org")); // Updated!
         vSeeds.push_back(CDNSSeedData("seeddns2.strayacash.org", "seeddns2.strayacash.org")); // Updated!
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 33);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 63); //Changed from 33 (E) to 63 (S) for addresses
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 91);
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 173);
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x02)(0x24)(0x33)(0x24).convert_to_container<std::vector<unsigned char> >();
