@@ -57,7 +57,7 @@ static Checkpoints::MapCheckpoints mapCheckpoints =
     (0, uint256("0x000000abe469592d7fce3219497661f3d18deff0cf7b1fc9846f199a25e2135c"));
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1525845356, // * UNIX timestamp of last checkpoint block
+    1522675261, // * UNIX timestamp of last checkpoint block
     1,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     100        // * estimated number of transactions per day after checkpoint
@@ -67,7 +67,7 @@ static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
     boost::assign::map_list_of(0, uint256("0x001"));
 static const Checkpoints::CCheckpointData dataTestnet = {
     &mapCheckpointsTestnet,
-    1525845356,
+    1522675262,
     0,
     250};
 
@@ -75,7 +75,7 @@ static Checkpoints::MapCheckpoints mapCheckpointsRegtest =
     boost::assign::map_list_of(0, uint256("0x001"));
 static const Checkpoints::CCheckpointData dataRegtest = {
     &mapCheckpointsRegtest,
-    1525845356,
+    1522675263,
     0,
     100};
 
@@ -96,7 +96,7 @@ public:
         pchMessageStart[2] = 0xa3;
         pchMessageStart[3] = 0xe2;
         vAlertPubKey = ParseHex("04266db20be5c53b93678e2e41c9def7af38197280c65e813f682adf2ed501ac186022562dbdf2ce3204d07432660fb61ecad8e78b6b8d39c568fb892db8ecb736");
-        nDefaultPort = 11788; // Main Net Port Arrival of the First Fleet
+        nDefaultPort = 11788; // Year First Fleet arrived in Australia
         bnProofOfWorkLimit = ~uint256(0) >> 20; // FIX starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 125000; // Decreased From 210,000
         nMaxReorganizationDepth = 100;
@@ -107,13 +107,13 @@ public:
         nTargetTimespan = 2 * 60; // FIX: 120 seconds
         nTargetSpacing = 2 * 60;  // FIX: 120 seconds
         nLastPOWBlock = 250000; // Increased from 1000
-        nMaturity = 100; // FIX //Decreased from 151
+        nMaturity = 101; // FIX //Decreased from 151
         nMasternodeCountDrift = 20;
 	nMasternodeColleteralLimxDev = 5000; //Params().MasternodeColleteralLimxDev()
         nModifierUpdateBlock = 510;
         nMaxMoneyOut = 24809843 * COIN; // Decreased From 90,000,000
 
-        const char* pszTimestamp = "Google to shut down operations";
+        const char* pszTimestamp = "You may want to get a job in a bank";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -124,20 +124,19 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1525845356;
+        genesis.nTime = 1522675261;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 11788;
+        genesis.nNonce = 18675;
 
         hashGenesisBlock = genesis.GetHash();
 
         assert(hashGenesisBlock == uint256("0x000000abe469592d7fce3219497661f3d18deff0cf7b1fc9846f199a25e2135c"));
         assert(genesis.hashMerkleRoot == uint256("0x30e73eb7875328cecc42b07eeb3e86a2d4644e0a65ed3db2b3f87b3368767358"));
-	
 
         vSeeds.push_back(CDNSSeedData("seeddns.strayacash.org", "seeddns.strayacash.org")); // Updated!
         vSeeds.push_back(CDNSSeedData("seeddns2.strayacash.org", "seeddns2.strayacash.org")); // Updated!
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 63); //Changed from 33 (E) to 63 (S) for addresses
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 63);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 91);
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 173);
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x02)(0x24)(0x33)(0x24).convert_to_container<std::vector<unsigned char> >();
@@ -159,8 +158,8 @@ public:
 
         nPoolMaxTransactions = 3;
         strSporkKey = "0478c3e932fbe183b2f665de937866cb1cfc5ed4b0bf733b72286f265ffc03ff52dfd669fbb3f77d630e5393da65c721a9a891d2c4c6aa515dfd25ffe545582357";
-        strObfuscationPoolDummyAddress = "STVDjeQDvFXz2gmip9NDN3Qcm295h4Kh7o";
-        nStartMasternodePayments = 1525845356;
+        strObfuscationPoolDummyAddress = "ETVDjeQDvFXz2gmip9NDN3Qcm295h4Kh7o";
+        nStartMasternodePayments = 1522675261;
     }
 
     const Checkpoints::CCheckpointData& Checkpoints() const
@@ -185,7 +184,7 @@ public:
         pchMessageStart[2] = 0xa8;
         pchMessageStart[3] = 0xc5;
         vAlertPubKey = ParseHex("0485286086a0871308bf36519edb18d95bbe9b098abe14ec9b684b5255028ec644bacdbddb98a522a6bcd7ab8e7d3582d7a5b9bf59c427f7eabce447b5ba6de25f");
-        nDefaultPort = 11770; // Tetnet Port, Year of Captain Cooks Arrival to Australia
+        nDefaultPort = 11770; // Year Captain Cook Arrived
         nEnforceBlockUpgradeMajority = 51;
         nRejectBlockOutdatedMajority = 75;
         nToCheckBlockUpgradeMajority = 100;
@@ -259,7 +258,7 @@ public:
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 1;
         nTargetTimespan = 24 * 60 * 60; // strayacash: 1 day
-        nTargetSpacing = 1 * 150;        // strayacash: 2.5 minutes (Increased from 1)
+        nTargetSpacing = 1 * 60;        // strayacash: 1 minutes
         bnProofOfWorkLimit = ~uint256(0) >> 1;
         genesis.nTime = 1522675263;
         genesis.nBits = 0x207fffff;
